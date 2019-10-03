@@ -1,0 +1,10 @@
+select * from members where contact_number is not null;
+select * from members;
+select * from members where contact_number is null;
+select 5=5;
+select null = null;
+select 5 > 5;
+select null > null;
+select 5 is null;
+select null is null;
+select null is not null;
