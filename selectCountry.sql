@@ -1,0 +1,12 @@
+SELECT * FROM world.country;
+select `name`, `continent`, `population` from country where Population < 100000 and `Continent` = 'Oceania';
+select `name`, `continent`, `population` from country where Name like '%island%' order by Name;
+select `name`, `continent`, `population` from country where `Name` like '_o%' order by name;
+select `name`, `continent`, `population` from country where Continent in ('Europe', 'Asia') order by Continent;
+select distinct `Continent`, `name` from country order by Continent;
+select * from country where Name = 'Australia';
+select `name`, `lifeexpectancy` as 'Life Expectancy' from country where `name` like '_o%' order by Name;
+select count(*) from country;
+select count(`lifeexpectancy`) from country;
+select count(`lifeexpectancy`) from country where Population > 1000000;
+select `name`, `continent` from country where Continent = 'Europe' limit 5;
